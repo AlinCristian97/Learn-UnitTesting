@@ -1,0 +1,14 @@
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\obj\Debug\UnitTestingTutorial.csprojAssemblyReference.cache
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\obj\Debug\UnitTestingTutorial.csproj.CoreCompileInputs.cache
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\UnitTestingTutorial.exe.config
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\UnitTestingTutorial.exe
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\UnitTestingTutorial.pdb
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\EntityFramework.dll
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\EntityFramework.xml
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\obj\Debug\UnitTestingTutorial.csproj.CopyComplete
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\obj\Debug\UnitTestingTutorial.exe
+C:\Users\AlinLaptop\RiderProjects\UnitTestingTutorial\UnitTestingTutorial\obj\Debug\UnitTestingTutorial.pdb
