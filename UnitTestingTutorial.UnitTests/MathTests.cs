@@ -23,27 +23,14 @@ namespace UnitTestingTutorial.UnitTests
         }
 
         [Test]
-        public void Max_FirstArgumentIsGreater_ReturnFirstArgument()
+        [TestCase(2, 1, 2)]
+        [TestCase(1, 2, 2)]
+        [TestCase(1, 1, 1)]
+        public void Max_WhenCalled_ReturnGreaterArgument(int a, int b, int expectedResult)
         {
-            int result = _math.Max(2, 1);
+            int result = _math.Max(a, b);
             
-            Assert.That(result, Is.EqualTo(2));
-        }
-        
-        [Test]
-        public void Max_SecondArgumentIsGreater_ReturnSecondArgument()
-        {
-            int result = _math.Max(1, 2);
-            
-            Assert.That(result, Is.EqualTo(2));
-        }
-        
-        [Test]
-        public void Max_ArgumentsAreEqual_ReturnSameArgument()
-        {
-            int result = _math.Max(1, 1);
-            
-            Assert.That(result, Is.EqualTo(1));
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
