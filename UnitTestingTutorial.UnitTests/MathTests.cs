@@ -15,6 +15,7 @@ namespace UnitTestingTutorial.UnitTests
         }
 
         [Test]
+        [Ignore("Temporary ignored because I need to do something else")]
         public void Add_WhenCalled_ReturnTheSumOfArguments()
         {
             int result = _math.Add(1, 2);
