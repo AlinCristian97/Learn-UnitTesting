@@ -6,12 +6,18 @@ namespace UnitTestingTutorial.UnitTests
     [TestFixture]
     public class MathTests
     {
+        private Math _math;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _math = new Math();
+        }
+
         [Test]
         public void Add_WhenCalled_ReturnTheSumOfArguments()
         {
-            var math = new Math();
-            
-            int result = math.Add(1, 2);
+            int result = _math.Add(1, 2);
             
             Assert.That(result, Is.EqualTo(3));
         }
@@ -19,9 +25,7 @@ namespace UnitTestingTutorial.UnitTests
         [Test]
         public void Max_FirstArgumentIsGreater_ReturnFirstArgument()
         {
-            var math = new Math();
-
-            int result = math.Max(2, 1);
+            int result = _math.Max(2, 1);
             
             Assert.That(result, Is.EqualTo(2));
         }
@@ -29,9 +33,7 @@ namespace UnitTestingTutorial.UnitTests
         [Test]
         public void Max_SecondArgumentIsGreater_ReturnSecondArgument()
         {
-            var math = new Math();
-
-            int result = math.Max(1, 2);
+            int result = _math.Max(1, 2);
             
             Assert.That(result, Is.EqualTo(2));
         }
@@ -39,9 +41,7 @@ namespace UnitTestingTutorial.UnitTests
         [Test]
         public void Max_ArgumentsAreEqual_ReturnSameArgument()
         {
-            var math = new Math();
-
-            int result = math.Max(1, 1);
+            int result = _math.Max(1, 1);
             
             Assert.That(result, Is.EqualTo(1));
         }
