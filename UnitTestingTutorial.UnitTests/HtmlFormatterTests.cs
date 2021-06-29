@@ -26,8 +26,6 @@ namespace UnitTestingTutorial.UnitTests
             Assert.That(result, Does.Contain("abc").IgnoreCase);
 
             #endregion
-            
-            
         }
         
     }
