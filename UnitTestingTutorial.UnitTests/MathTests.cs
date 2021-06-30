@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using TestNinja.Fundamentals;
+using UnitTestingTutorial.Fundamentals;
 
 namespace UnitTestingTutorial.UnitTests
 {

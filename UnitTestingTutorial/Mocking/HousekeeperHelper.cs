@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 
-namespace TestNinja.Mocking
+namespace UnitTestingTutorial.Mocking
 {
     public static class HousekeeperHelper
     {

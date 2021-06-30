@@ -1,14 +1,14 @@
 ﻿
 using System;
 
-namespace TestNinja.Fundamentals
+namespace UnitTestingTutorial.Fundamentals
 {
     public class ErrorLogger
     {
         public string LastError { get; set; }
 
-        public event EventHandler<Guid> ErrorLogged; 
-        
+        public event EventHandler<Guid> ErrorLogged;
+
         public void Log(string error)
         {
             if (String.IsNullOrWhiteSpace(error))
@@ -19,7 +19,12 @@ namespace TestNinja.Fundamentals
             // Write the log to a storage
             // ...
 
-            ErrorLogged?.Invoke(this, Guid.NewGuid());
+            OnErrorLog(Guid.NewGuid());
+        }
+
+        protected virtual void OnErrorLog(Guid errorId)
+        {
+            ErrorLogged?.Invoke(this, errorId);
         }
     }
 }

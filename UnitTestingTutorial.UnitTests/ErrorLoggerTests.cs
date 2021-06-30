@@ -1,6 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
-using TestNinja.Fundamentals;
+using UnitTestingTutorial.Fundamentals;
 
 namespace UnitTestingTutorial.UnitTests
 {
@@ -49,5 +49,16 @@ namespace UnitTestingTutorial.UnitTests
             
             Assert.That(id, Is.Not.EqualTo(Guid.Empty));
         }
+        
+        // What you shouldn't do:
+        // [Test]
+        // public void OnErrorLogged_WhenCalled_RaiseEvent()
+        // {
+        //     var logger = new ErrorLogger();
+        //     
+        //     logger.OnErrorLogged();
+        //     
+        //     Assert.That(true);
+        // }
     }
 }

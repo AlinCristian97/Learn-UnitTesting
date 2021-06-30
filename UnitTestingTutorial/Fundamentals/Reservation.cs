@@ -1,4 +1,4 @@
-﻿namespace TestNinja.Fundamentals
+﻿namespace UnitTestingTutorial.Fundamentals
 {
     public class Reservation
     {
