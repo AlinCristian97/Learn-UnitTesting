@@ -33,7 +33,7 @@ namespace UnitTestingTutorial.UnitTests.Mocking
                 fd.DownloadFile(It.IsAny<string>(), It.IsAny<string>()))
                 .Throws<WebException>();
 
-            bool result = _installerHelper.DownloadInstaller("customer", "installer");
+            bool result = _installerHelper.DownloadInstaller("anyName", "anyName");
             
             Assert.That(result, Is.False);
         }
