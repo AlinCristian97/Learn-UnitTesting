@@ -18,7 +18,7 @@ namespace UnitTestingTutorial.Mocking
         
         public string ReadVideoTitle()
         {
-            var str = _fileReader.Read("video.txt");
+            string str = _fileReader.Read("video.txt");
             var video = JsonConvert.DeserializeObject<Video>(str);
             if (video == null)
                 return "Error parsing the video.";

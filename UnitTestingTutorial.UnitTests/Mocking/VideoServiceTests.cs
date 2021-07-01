@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using UnitTestingTutorial.Mocking;
 
 namespace UnitTestingTutorial.UnitTests.Mocking
@@ -6,12 +7,23 @@ namespace UnitTestingTutorial.UnitTests.Mocking
     [TestFixture]
     public class VideoServiceTests
     {
+        private VideoService _service;
+        private Mock<IFileReader> _fileReader;
+
+
+        [SetUp]
+        public void SetUp()
+        {
+            _fileReader = new Mock<IFileReader>();
+            _service = new VideoService(_fileReader.Object);
+        }
+
         [Test]
         public void ReadVideoTitle_EmptyFile_ReturnErrorMessage()
         {
-            var service = new VideoService(new FakeFileReader());
+            _fileReader.Setup(fr => fr.Read("video.txt")).Returns("");
             
-            string result = service.ReadVideoTitle();
+            string result = _service.ReadVideoTitle();
             
             Assert.That(result, Does.Contain("error").IgnoreCase);
         }
