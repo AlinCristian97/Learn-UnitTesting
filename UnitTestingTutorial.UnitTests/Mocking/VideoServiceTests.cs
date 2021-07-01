@@ -10,8 +10,9 @@ namespace UnitTestingTutorial.UnitTests.Mocking
         public void ReadVideoTitle_EmptyFile_ReturnErrorMessage()
         {
             var service = new VideoService();
+            service.FileReader = new FakeFileReader();
             
-            string result = service.ReadVideoTitle(new FakeFileReader());
+            string result = service.ReadVideoTitle();
             
             Assert.That(result, Does.Contain("error").IgnoreCase);
         }
