@@ -9,8 +9,7 @@ namespace UnitTestingTutorial.UnitTests.Mocking
         [Test]
         public void ReadVideoTitle_EmptyFile_ReturnErrorMessage()
         {
-            var service = new VideoService();
-            service.FileReader = new FakeFileReader();
+            var service = new VideoService(new FakeFileReader());
             
             string result = service.ReadVideoTitle();
             
