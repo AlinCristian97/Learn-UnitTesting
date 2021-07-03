@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UnitTestingTutorial.Mocking
 {
-    public class HousekeeperHelper
+    public class HousekeeperService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IStatementGenerator _statementGenerator;
@@ -15,7 +15,11 @@ namespace UnitTestingTutorial.Mocking
         private readonly IXtraMessageBox _messageBox;
         private static readonly UnitOfWork UnitOfWork = new UnitOfWork();
 
-        public HousekeeperHelper(IUnitOfWork unitOfWork, IStatementGenerator statementGenerator, IEmailSender emailSender, IXtraMessageBox messageBox)
+        public HousekeeperService(
+            IUnitOfWork unitOfWork, 
+            IStatementGenerator statementGenerator, 
+            IEmailSender emailSender, 
+            IXtraMessageBox messageBox)
         {
             _unitOfWork = unitOfWork;
             _statementGenerator = statementGenerator;
@@ -33,7 +37,10 @@ namespace UnitTestingTutorial.Mocking
                     continue;
 
                 string statementFilename = 
-                    _statementGenerator.SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
+                    _statementGenerator.SaveStatement(
+                        housekeeper.Oid, 
+                        housekeeper.FullName, 
+                        statementDate);
 
                 if (string.IsNullOrWhiteSpace(statementFilename))
                     continue;
