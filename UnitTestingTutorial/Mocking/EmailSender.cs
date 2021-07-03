@@ -12,7 +12,7 @@ namespace UnitTestingTutorial.Mocking
 
     public class EmailSender : IEmailSender
     {
-            public void EmailFile(string emailAddress, string emailBody, string filename, string subject)
+        public void EmailFile(string emailAddress, string emailBody, string filename, string subject)
             {
                 var client = new SmtpClient(SystemSettingsHelper.EmailSmtpHost)
                 {
