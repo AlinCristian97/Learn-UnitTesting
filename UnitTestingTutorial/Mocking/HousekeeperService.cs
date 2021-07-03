@@ -33,7 +33,7 @@ namespace UnitTestingTutorial.Mocking
 
             foreach (Housekeeper housekeeper in housekeepers)
             {
-                if (housekeeper.Email == null)
+                if (string.IsNullOrWhiteSpace(housekeeper.Email))
                     continue;
 
                 string statementFilename = 
