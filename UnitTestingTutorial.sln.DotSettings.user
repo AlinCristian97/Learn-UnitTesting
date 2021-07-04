@@ -1,6 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/EntityFrameworkOptions/IsAlreadyNotifiedAboutEntityFramework/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=12606545_002D26dc_002D4e21_002D9045_002Dd9c9d8d6b82f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Pop_WhenCalled_ReturnRemovedElement" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=12606545_002D26dc_002D4e21_002D9045_002Dd9c9d8d6b82f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Pop_WhenCalled_ReturnRemovedElement" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.StackTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.Mocking.VideoServiceTests.ReadVideoTitle_EmptyFile_ReturnErrorMessage&lt;/TestId&gt;&#xD;
@@ -15,9 +15,10 @@
     &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.Mocking.BookingHelperTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.Mocking.HousekeeperServiceTests.SendStatementEmails_WhenCalled_GenerateStatements&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.Mocking.HousekeeperServiceTests.SendStatementEmails_StatementFileNameIsNull_ShouldNotEmailTheStatement&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::83D90C56-9542-43B7-AA09-EA4B2E244F3A::.NETFramework,Version=v4.7.2::UnitTestingTutorial.UnitTests.Mocking.HousekeeperServiceTests.SendStatementEmails_EmailSendingFails_DisplayMessageBox&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afa0f7cb_002D47a4_002D4d08_002D9714_002D995495ec6e3c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afa0f7cb_002D47a4_002D4d08_002D9714_002D995495ec6e3c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
